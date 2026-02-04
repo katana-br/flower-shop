@@ -32,12 +32,12 @@
   <p class="price">₱150 each</p>
 
   <div class="colors">
-    <span class="color-tag red">Red</span>
-    <span class="color-tag pink">Pink</span>
-    <span class="color-tag skyblue">Skyblue</span>
-    <span class="color-tag purple">Purple</span>
-    <span class="color-tag blue">Blue</span>
-    <span class="color-tag white">White</span>
+    <span class="color-tag red" data-image="stem-red.jpg"></span>
+    <span class="color-tag pink" data-image="stem-pink.jpg"></span>
+    <span class="color-tag skyblue" data-image="stem-skyblue.jpg"></span>
+    <span class="color-tag purple" data-image="stem-purple.jpg"></span>
+    <span class="color-tag blue" data-image="stem-blue.jpg"></span>
+    <span class="color-tag white" data-image="stem-white.jpg"></span>
   </div>
 
   <a href="order.html" class="btn">Order Dried Flowers</a>
@@ -65,5 +65,19 @@
     <p>© 2026 Mikayla's Flower Shop | All Rights Reserved</p>
   </footer>
 
+<script>
+  const colorTags = document.querySelectorAll('.color-tag');
+  const flowerImage = document.getElementById('flowerImage');
+
+  colorTags.forEach(color => {
+    color.addEventListener('click', () => {
+      const newImage = color.getAttribute('data-image');
+      flowerImage.src = newImage;
+    });
+  });
+</script>
+
+  
 </body>
 </html>
+
