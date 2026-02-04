@@ -31,21 +31,21 @@
   <p>Perfect for simple gifts & decorations.</p>
   <p class="price">₱150 each</p>
 
-  <div class="colors">
-    <span class="color-tag pink" data-image="stem-pink.jpg"></span>
-    <span class="color-tag skyblue" data-image="stem-skyblue.jpg"></span>
-    <span class="color-tag purple" data-image="stem-purple.jpg"></span>
-    <span class="color-tag blue" data-image="stem-blue.jpg"></span>
-    <span class="color-tag white" data-image="stem-white.jpg"></span>
-  </div>
+ <div class="colors">
+  <span class="color-tag pink" onclick="changeFlower('stem-pink.jpg')"></span>
+  <span class="color-tag skyblue" onclick="changeFlower('stem-skyblue.jpg')"></span>
+  <span class="color-tag purple" onclick="changeFlower('stem-purple.jpg')"></span>
+  <span class="color-tag blue" onclick="changeFlower('stem-blue.jpg')"></span>
+  <span class="color-tag white" onclick="changeFlower('stem-white.jpg')"></span>
+</div>
 
   <a href="order.html" class="btn">Order Dried Flowers</a>
 </div>
 
 
 <div class="card">
-  <img src="bouquet.jpg" alt="Bouquet" class="product-img">
-
+<img src="stem.jpg" alt="Dried Flowers" class="product-img" id="flowerImage">
+  
   <h3>💐 Bouquet</h3>
   <p>Best for birthdays, anniversaries & surprises.</p>
   <p class="price">₱1500</p>
@@ -65,25 +65,15 @@
   </footer>
 
 <script>
-  const colorTags = document.querySelectorAll('.color-tag');
-  const flowerImage = document.getElementById('flowerImage');
-
-  console.log("Color tags found:", colorTags.length);
-  console.log("Image element:", flowerImage);
-
-  colorTags.forEach(color => {
-    color.addEventListener('click', () => {
-      const newImage = color.getAttribute('data-image');
-      console.log("Clicked:", newImage);
-      flowerImage.src = newImage;
-    });
-  });
+  function changeFlower(imageName) {
+    document.getElementById("flowerImage").src = imageName;
+  }
 </script>
 
 
-  
 </body>
 </html>
+
 
 
 
