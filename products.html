@@ -68,16 +68,22 @@
   const colorTags = document.querySelectorAll('.color-tag');
   const flowerImage = document.getElementById('flowerImage');
 
+  console.log("Color tags found:", colorTags.length);
+  console.log("Image element:", flowerImage);
+
   colorTags.forEach(color => {
     color.addEventListener('click', () => {
       const newImage = color.getAttribute('data-image');
+      console.log("Clicked:", newImage);
       flowerImage.src = newImage;
     });
   });
 </script>
 
+
   
 </body>
 </html>
+
 
 
