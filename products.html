@@ -25,18 +25,18 @@
     <div class="cards">
 
       <div class="card">
-<img src="stem.jpg" alt="Dried Flowers" class="product-img" id="flowerImage">
+<img src="stem.jpg" alt="Dried Flowers" class="product-img" id="flowerImage1">
 
   <h3>🌷 Dried Flowers (Per Stem)</h3>
   <p>Perfect for simple gifts & decorations.</p>
   <p class="price">₱150 each</p>
 
  <div class="colors">
-  <span class="color-tag pink" onclick="changeFlower('stem-pink.jpg')"></span>
-  <span class="color-tag skyblue" onclick="changeFlower('stem-skyblue.jpg')"></span>
-  <span class="color-tag purple" onclick="changeFlower('stem-purple.jpg')"></span>
-  <span class="color-tag blue" onclick="changeFlower('stem-blue.jpg')"></span>
-  <span class="color-tag white" onclick="changeFlower('stem-white.jpg')"></span>
+  <span class="color-tag pink" onclick="changeFlower('flowerImage1','stem-pink.jpg')"></span>
+  <span class="color-tag skyblue" onclick="changeFlower('flowerImage1','stem-skyblue.jpg')"></span>
+  <span class="color-tag purple" onclick="changeFlower('flowerImage1','stem-purple.jpg')"></span>
+  <span class="color-tag blue" onclick="changeFlower('flowerImage1','stem-blue.jpg')"></span>
+  <span class="color-tag white" onclick="changeFlower('flowerImage1','stem-white.jpg')"></span>
 </div>
 
   <a href="order.html" class="btn">Order Dried Flowers</a>
@@ -44,7 +44,7 @@
 
 
 <div class="card">
-<img src="stem.jpg" alt="Dried Flowers" class="product-img" id="flowerImage">
+<img src="stem.jpg" alt="Bouquet" class="product-img">
   
   <h3>💐 Bouquet</h3>
   <p>Best for birthdays, anniversaries & surprises.</p>
@@ -65,14 +65,16 @@
   </footer>
 
 <script>
-  function changeFlower(imageName) {
-    document.getElementById("flowerImage").src = imageName;
+  function changeFlower(imageId, imageName) {
+    document.getElementById(imageId).src = imageName;
   }
 </script>
 
 
+
 </body>
 </html>
+
 
 
 
