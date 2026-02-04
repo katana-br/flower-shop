@@ -202,3 +202,24 @@ body {
   border-radius: 14px;
   margin-bottom: 12px;
 }
+
+.colors {
+  margin: 10px 0;
+}
+
+.color-tag {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.red { background: red; }
+.pink { background: pink; }
+.skyblue { background: skyblue; }
+.purple { background: purple; }
+.blue { background: blue; }
+.white { background: white; }
